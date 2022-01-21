@@ -23,8 +23,8 @@ public class Prog7 {
         }
         for(int i=0;i<n;i++){
             int k=0;
-            int msb = r[1];
-            for(int j=1;j<m+1;j++){
+            int msb = r[i];
+            for(int j=i;j<m+i;j++){
                 r[j] = msb==0 ? xor(r[j],z[k]):xor(r[j],g[k]);
                 k++;
             }
