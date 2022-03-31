@@ -29,7 +29,7 @@ class Prog11{
         int m = s.nextInt();
         int e,d=phi;
         do{
-            System.out.println("Enter an integer which isnt a factor of "+n);
+            System.out.println("Enter an integer which isnt a factor of "+phi);
             e = s.nextInt();
         }while(gcd(phi,e)!=1);
         while((e*d)%phi!=1)d++;

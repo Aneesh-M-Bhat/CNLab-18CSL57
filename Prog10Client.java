@@ -1,10 +1,10 @@
-import java.io.*;
+// import java.io.*;
 import java.net.*;
 import java.util.Scanner;
 public class Prog10Client {
     public static void main(String[] args) throws Exception{
         
-        BufferedReader infromuser = new BufferedReader(new InputStreamReader(System.in));
+        // BufferedReader infromuser = new BufferedReader(new InputStreamReader(System.in));
         InetAddress IPAddress = InetAddress.getByName("localhost");
         byte[] SendData = new byte[1024];
         byte[] receiveData = new byte[1024];
@@ -23,7 +23,7 @@ public class Prog10Client {
         String modifiedSentence = new String(receivePacket.getData());
         System.out.println("Message recieved from server:"+ modifiedSentence);
         ClientSocket.close();
-        infromuser.close();
+        // infromuser.close();
         s.close();
     }
 }
